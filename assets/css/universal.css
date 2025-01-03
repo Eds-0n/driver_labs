@@ -8,6 +8,16 @@
     --shadow: 0 0 20px 1px #aaaaaa31;
 }
 
+@font-face {
+    font-family: 'Extatica';
+    src: url('../fonts/Extatica-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
