@@ -1,1 +1,1 @@
-Projeto de Ensino Online simulando uma escola de conducção
+Projeto de Ensino Online simulando uma escola de condução
