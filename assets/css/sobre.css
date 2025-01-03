@@ -1,0 +1,289 @@
+
+/* ============================================== */
+/*                 PAGINA SOBRE                   */
+
+/* Estilo do about-banner */
+
+#about-banner {
+    width: 100%;
+    padding-top: 100px;
+}
+
+#about-banner .breadcrumb {
+    background-color: var(--cinza-claro);
+    padding: 100px 0;
+    
+    & .titulo-g {
+        font-family: 'Extatica', sans-serif;
+        font-style: italic;
+        font-size: 50px;
+    }
+} 
+
+
+/* Estilo do porque nos */
+
+#us {
+    padding: 100px 0;
+}
+
+#us .container {
+    gap: 100px;
+}
+
+#us .flex {
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#us img {
+    height: 350px;
+}
+
+#us .content {
+    width: 70vw;
+    gap: 1rem;
+    
+    & .barra-lateral {
+        margin-bottom: 20px;
+    }
+}
+
+#us .content .barra {
+    height: 70px;
+    width: 10px;
+}
+
+#us .objectivo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    place-content: center;
+    gap: 16px;
+    
+    & .box {
+        border: 1px solid var(--azul-claro);
+        padding: 20px;
+        height: 100%;
+        border-radius: 10px;
+        
+        & .flex {
+            flex-direction: row;
+            justify-content: start;
+            gap: 15px;
+            
+            & .titulo-m {
+                font-size: 25px;
+            }
+        }
+        
+        & i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--azul-claro);
+            align-self: center;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 15px;
+            color: var(--branco);
+        }
+        
+        & .lead {
+            padding-left: 60px;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+/* Estilo de Educacao-online */
+
+#educacao-online {
+    padding: 100px 0;
+    background: var(--cinza-claro);
+}
+
+#educacao-online > .flex-column {
+    justify-content: space-between;
+}
+
+#educacao-online .flex-column .box {
+    gap: 50px;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+#educacao-online .flex-column .box div {
+    width: 50%;
+}
+
+#educacao-online .flex-column .box img {
+    /* height: 300px; */
+    max-width: 400px;
+    margin-right: 0;
+}
+
+#educacao-online .flex-column .box .content {
+    gap: 1rem;
+}
+
+#educacao-online .flex-column .box .content h1 {
+    font-weight: 500;
+}
+
+/* Estilo de Como-funciona */
+
+#como-funciona {
+    padding: 100px 0;
+    text-align: center;
+    
+    & .flex-column {
+        width: 900px;
+        gap: 50px;
+        
+        & .box {
+            border: 1px solid var(--azul-claro);
+            width: 350px;
+            padding: 50px;
+            border-radius: 5px;
+            text-align: center;
+            gap: 20px;
+            
+            & .number {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                color: var(--branco);
+                font-size: 30px;
+                padding-top: 13px;
+                background-color: var(--azul-claro);
+                text-align: center;
+                align-self: center;
+            }
+        }
+        
+        & .box-2 {
+            margin-top: -50px;
+            align-self: flex-end;
+        }
+        
+        & .box-3 {
+            margin-top: -50px;
+        }
+        
+        & .arrow {
+            border: none;
+            
+            & img {
+                width: 100px;
+            }
+        }
+        
+        & .arrow-right {
+            margin-top: -300px !important;
+            margin-left: 330px !important;
+        }
+        
+        & .arrow-left {
+            margin-top: -300px !important;
+            margin-left: 150px !important;
+        }
+        
+    }
+}
+
+
+/* Estilo de instructos */
+
+#instructors {
+    padding: 100px 0;
+    background-color: var(--cinza-claro);
+    
+    & .btn {
+        margin-top: 30px;
+        background-color: var(--azul-escuro);
+        width: 200px;
+        align-self: center;
+    }
+    
+    & .btn:hover {
+        background-color: var(--azul-claro);
+    }
+}
+
+#instructors .container {
+    gap: 2rem; 
+}
+
+#instructors .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#instructors .flex div {
+    width: 70%;
+}
+
+#instructors .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+#instructors .cards .card {
+    background: var(--branco);
+    border-radius: 20px;
+    border: 1px solid var(--azul-ceu);
+    border-top: 5px solid var(--azul-claro);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+#instructors .cards .card:hover {
+    transform: scale(1.02);
+}
+
+#instructors .cards .card h2 {
+    font-weight: 400;
+    color: var(--azul-escuro);
+    font-size: 1.2rem;
+}
+
+#instructors .cards .card i {
+    color: var(--azul-escuro);
+}
+
+#instructors .cards .card i:hover {
+    color: var(--azul-claro);
+    cursor: pointer;
+}
+
+#instructors .cards .card .img {
+    border-radius: 18px 18px 0 0;
+    height: 300px;
+    background: no-repeat center center/cover;
+}
+
+#instructors .cards .card div {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    
+    & .fa-brands {
+        display: block;
+        margin: 0 10px;
+    }
+}
+
+#instructors .cards .card p.lead {
+    padding: 0 20px 20px 20px;
+}

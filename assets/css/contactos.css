@@ -1,0 +1,150 @@
+
+
+/* =================================== */
+
+/*          Pagina de Contactos */
+
+#suporte-aluno {
+    padding: 100px 0;
+    /* background-color: var(--azul-ceu); */
+    
+    & .container {
+        gap: 30px;
+        
+        & .suporte {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            gap: 30px;
+            justify-content: center;
+            
+            & .box {
+                /* border: 1px solid var(--azul-ceu); */
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                gap: 30px;
+                box-shadow: var(--shadow);
+                margin-bottom: 10px;
+                transition: .5s;
+                
+                & i {
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 30px;
+                    color: var(--azul-claro);
+                }
+                
+                & .tabela-horario {
+                    grid-template-columns: 3fr 1fr;
+                    text-align: left;
+                    row-gap: 10px;
+                }
+                
+                & a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    border: 1px solid var(--azul-claro);
+                    background-color: var(--azul-escuro);
+                    color: var(--branco) !important;
+                }
+                
+                & a:hover {
+                    color: var(--branco) !important;
+                    background-color: var(--azul-claro);
+                }
+                
+                & form .form-group {
+                    text-align: left;
+                    margin-bottom: 15px;
+                    
+                    & input {
+                        width: 100%;
+                        height: 40px;
+                        background: var(--cinza-claro);
+                        outline: none;
+                        border: 1px solid var(--azul-claro);
+                        border-radius: 5px;
+                        margin-top: 5px;
+                        font-size: 15px;
+                        padding-left: 5px;
+                    }
+                    
+                    & select {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 15px;
+                        padding: 0 5px;
+                        margin-top: 5px;
+                        border-radius: 5px;
+                        border: 1px solid var(--azul-claro);
+                        outline: none;
+                        color: var(--azul-claro);
+                    }
+                }
+            }
+            
+            & .box:hover {
+                background-color: var(--cinza-claro);
+                box-shadow: none;
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+#suporte-instrutor {
+    padding: 100px 0;
+    background-color: var(--cinza-claro);
+    
+    & .container {
+        gap: 30px;
+        
+        & .grid {
+            grid-template-columns: repeat(3, 350px);
+            gap: 30px;
+            align-items: center;
+            margin: 20px 0;
+            justify-content: center;
+            
+            & .titulo-g {
+                font-size: 25px;
+            }
+            
+            & .box {
+                /* border: 1px solid var(--azul-ceu); */
+                box-shadow: var(--shadow);
+                height: 100%;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                gap: 20px;
+                
+                & i {
+                    align-self: center;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    padding-top: 28px;
+                    font-size: 25px;
+                    color: var(--azul-claro);
+                    background-color: var(--azul-ceu);
+                }
+                
+                & .btn {
+                    width: 60%;
+                    background-color: var(--azul-escuro);
+                    color: var(--branco) !important;
+                    align-self: center;
+                    border-radius: 5px;
+                }
+                
+                & .btn:hover {
+                    background-color: var(--azul-claro);
+                }
+            }
+        }
+    }
+}
+
+/* =================================== */
+

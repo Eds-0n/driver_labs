@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/car-logo-design.png">
+    <link rel="stylesheet" href="./assets/css/universal.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <title>Driver Labs - Aulas de direção</title>
+</head>
+
+<body id="home-page">
+
+    <header id="cabecalho">
+
+        <div class="navbar">
+            <div class="container">
+                <a href="http://localhost/driver_labs">
+                    <img src="http://localhost/driver_labs/assets/img/car-logo-design.png" alt="">
+                </a>
+
+                <ul>
+                    <li><a href="http://localhost/driver_labs" class="active">Inicio</a></li>
+                    <li><a href="http://localhost/driver_labs/assets/pages/sobre.php">Sobre</a></li>
+                    <li><a href="http://localhost/driver_labs/assets/pages/precos.php">Preços</a></li>
+                    <li><a href="http://localhost/driver_labs/assets/pages/cursos.php">Cursos</a></li>
+                    <li><a href="http://localhost/driver_labs/assets/pages/contactos.php">Contactos</a></li>
+                </ul>
+
+                <a href="#" class="btn btn-login">Entrar</a>
+                <div class="abrir_fechar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="mobile">
+                <li><a href="http://localhost/driver_labs" class="active">Inicio</a></li>
+                <li><a href="http://localhost/driver_labs/assets/pages/sobre.php">Sobre</a></li>
+                <li><a href="http://localhost/driver_labs/assets/pages/precos.php">Precos</a></li>
+                <li><a href="http://localhost/driver_labs/assets/pages/cursos.php">Cursos</a></li>
+                <li><a href="http://localhost/driver_labs/assets/pages/contactos.php">Contactos</a></li>
+            </div>
+        </div>
+    </header>
+
+    <section id="popup" class="popup">
+
+        <div class="container">
+
+            <div class="login_popup">
+
+                <div class="form-container">
+                    <div class="box box-1">
+                        <div class="content">
+                            <h1 class="titulo-g">Bem-Vindo</h1>
+                            <h2 class="titulo-m">Aprender a conduzir nunca foi tão fácil</h2>
+                            <p class="lead">Entre para gerenciar suas aulas, acompanhar seu progresso e aproveitar ao máximo sua experiência de aprendizado!</p>
+                        </div>
+                        <div class="bola-1"></div>
+                        <div class="bola-2"></div>
+                    </div>
+
+                    <div class="box box-2">
+
+                        <i class="fa-solid fa-close"></i>
+
+                        <div class="content">
+                            <h1 class="titulo-g">Entrar</h1>
+                            <p class="lead">Acesse o seu painel para melhor administrar os seus estudos</p>
+                        </div>
+                        <form id="login_form" method="POST" action="/assets/php/login.php">
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" name="login_email" id="login_email" placeholder="Email" required>
+                            </div>
+
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" name="login_senha" id="login_senha" placeholder="Palavra-passe" required>
+                            </div>
+
+                            <div class="checkbox mb-10">
+                                <p><input type="checkbox"> Lembrar-me</p>
+                                <a href="#">Esqueceu a palavra-passe?</a>
+                            </div>
+
+                            <div class="butoes mb-10">
+                                <button id="signin" class="signin">Entrar</button>
+                                <div>
+                                    <span></span> ou <span></span>
+                                </div>
+                                <button id="signin_others" class="signup">Entrar com outra</button>
+                            </div>
+
+                            <p class="conta">Não tem uma conta? <a href="#" class="btn_popup_register">Registrar</a></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="register_popup hide">
+
+                <div class="form-container">
+                    <div class="box box-1">
+                        <div class="content">
+                            <h1 class="titulo-g">Bem-Vindo</h1>
+                            <h2 class="titulo-m">Aprender a conduzir nunca foi tão fácil</h2>
+                            <p class="lead">Entre para gerenciar suas aulas, acompanhar seu progresso e aproveitar ao máximo sua experiência de aprendizado!</p>
+                        </div>
+                        <div class="bola-1"></div>
+                        <div class="bola-2"></div>
+                    </div>
+
+                    <div class="box box-2">
+
+                        <i class="fa-solid fa-close"></i>
+
+                        <div class="content">
+                            <h1 class="titulo-g">Registrar</h1>
+                            <p class="lead">Cadastre-se para fazer a gestão do teu aprendizado a sua maneira!</p>
+                        </div>
+
+                        <form id="register_form" method="POST" action="/assets/php/register.php">
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="register_nome" id="register_nome" placeholder="Nome" required>
+                            </div>
+
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="register_apelido" id="register_apelido" placeholder="Apelido" required>
+                            </div>
+
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" name="register_email" id="register_email" placeholder="E-mail" required>
+                            </div>
+
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" name="register_password" id="register_senha" placeholder="Palavra-passe" required>
+                            </div>
+
+                            <div class="input-group mb-10">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" name="register_password2" id="register_senha2" placeholder="Confirmar palavra-passe" required>
+                            </div>
+
+                            <div class="butoes mb-10">
+                                <button type="submit" id="signup" class="signin">Resgistrar</button>
+
+                                <p class="conta">Já tem uma conta? <a href="#" class="btn_popup_login">Entrar</a></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <main>
+        <section id="banner-principal">
+            <div class="overlay">
+                <div class="container flex">
+                    <h1 style="color: var(--azul-claro); font-style: normal !important;">Conduza Agora</h1>
+                    <h1>Apreda Rápido & Fácil</h1>
+                    <p class="lead">Pegue a estrada com o maior fornecedor de instrutores de direção independentes de Maputo. Encontre seu curso perfeito e reserve suas aulas de direção hoje mesmo.</p>
+
+                    <div>
+                        <a href="https://facebook.com" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios">
+
+            <div class="container flex-column">
+
+                <div class="barra-lateral">
+                    <span class="barra"></span>
+                    <h1 class="titulo-g">Beneficios Extras com a <i>Driver Labs</i></h1>
+                </div>
+
+                <div class="flex">
+
+                    <div class="cartao b-radius-10">
+                        <div class="conteudo flex-column">
+                            <span class="ordem">1</span>
+                            <h1 class="titulo-m">Verifique seu progresso</h1>
+                            <p class="lead">O Portal Estudante é o seu lugar para tudo o que é Driver Labs</p>
+                        </div>
+                        <div class="img"><img src="./assets/img/portal-estudante.png" alt="Portal Estudante"></div>
+                    </div>
+
+                    <div class="cartao b-radius-10">
+                        <div class="conteudo flex-column">
+                            <span class="ordem">2</span>
+                            <h1 class="titulo-m">Obtenha ajuda de nossos especialistas</h1>
+                            <p class="lead">Acesse aulas particulares online e principais recursos, Driver Labs aumenta suas chances de passar no teste teórico na primeira vez.</p>
+                        </div>
+                        <div class="img"><img src="./assets/img/ensino-online.png" alt="Ensino Online"></div>
+                    </div>
+
+                    <div class="cartao b-radius-10">
+                        <div class="conteudo flex-column">
+                            <span class="ordem">3</span>
+                            <h1 class="titulo-m">Videos de aulas de direção</h1>
+                            <p class="lead">O Conselho de condução de especialistas a qualquer momento, em qualquer lugar, de qualquer smartphone ou computador.</p>
+                        </div>
+                        <div class="img"><img src="./assets/img/video-aulas.png" alt="Video Aulas"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container flex-column">
+                <div class="barra-lateral">
+                    <span class="barra"></span>
+                    <h1 class="titulo-g">Nossas aulas de condução e produtos</h1>
+                </div>
+                <div class="grid">
+                    <div class="cartao flex-column b-radius-10">
+                        <img src="./assets/img/svg/wheel.svg" alt="">
+                        <h1 class="titulo-m">Cursos intensivos de condução</h1>
+                        <p class="lead">Nossos tempos médios de conclusão de curso cortam pela metade os tempos de espera do DVSA para testes práticos. Você fará seu teste mais rápido conosco, colocando você na estrada mais rápido.</p>
+                        <a href="http://localhost/driver_labs/assets/pages/cursos.php"><button class="btn">Descubra nossos cursos <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                    <div class="cartao flex-column b-radius-10">
+                        <img src="./assets/img/svg/protection.svg" alt="">
+                        <h1 class="titulo-m">Proteção de passe</h1>
+                        <p class="lead">Lutando com testes ou se sentindo nervoso? Tire a pressão e dê a si mesmo a confiança para ter sucesso. O PassProtect oferece dois testes práticos extras pelo preço de um.</p>
+                        <a href="http://localhost/driver_labs/assets/pages/protecao-passe.php"><button class="btn">Saiba mais <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                    <div class="cartao flex-column b-radius-10">
+                        <img src="./assets/img/svg/pay.svg" alt="">
+                        <h1 class="titulo-m">Várias formas de pagamento</h1>
+                        <p class="lead">Reserve hoje com um pagamento inicial de apenas £ 250 ou pague integralmente. Aceitamos todos os principais cartões de crédito e débito, além de American Express. Klarna* e Payl8r** disponíveis.</p>
+                        <a href="http://localhost/driver_labs/assets/pages/precos.php"><button class="btn">Veja opções de pagamento <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aprender-a-dirigir">
+            <div class="container flex-column">
+                <div class="topo barra-lateral">
+                    <span class="barra"></span>
+                    <h1 class="titulo-g">Por que aprender a dirigir com a <i>Driver Labs?</i></h1>
+                </div>
+                <div class="fundo grid">
+                    <div class="flex-column b-radius-10">
+                        <img src="./assets/img/svg/user-with-car-wheel.svg" alt="">
+                        <h1 class="titulo-m">Cursos adequados para você</h1>
+                        <p class="lead">Nossos cursos de direção podem ser intensivos e semi-intensivos ou tão lentos quanto você precisar.</p>
+                    </div>
+                    <div class="flex-column b-radius-10">
+                        <img src="./assets/img/svg/stopwatch.svg" alt="">
+                        <h1 class="titulo-m">Quer passar rápido?</h1>
+                        <p class="lead">Podemos agendar testes até 8 semanas mais rápido do que o tempo de espera do pelo teste.</p>
+                    </div>
+                    <div class="flex-column b-radius-10">
+                        <img src="./assets/img/svg/certificate.svg" alt="">
+                        <h1 class="titulo-m">Histórias de sucesso</h1>
+                        <p class="lead">Ajudamos mais de 50.000 estudantes a pegar a estrada. Confira nossas avaliações!</p>
+                    </div>
+                    <div class="flex-column b-radius-10">
+                        <img src="./assets/img/svg/home-with-wheel.svg" alt="">
+                        <h1 class="titulo-m">Retiradas em domicílio</h1>
+                        <p class="lead">Seja buscado e deixado em casa para aulas de direção na maior parte da Cidade de Maputo.</p>
+                    </div>
+                    <div class="flex-column b-radius-10">
+                        <img src="./assets/img/svg/dollar-sign-in-circle.svg" alt="">
+                        <h1 class="titulo-m">Cursos a partir de 9.850,00 MT</h1>
+                        <p class="lead">Nossos cursos intensivos de direção incluem taxa de teste prático acelerado!</p>
+                    </div>
+                    <div class="flex-column b-radius-10">
+                        <img src="./assets/img/svg/headphone.svg" alt="">
+                        <h1 class="titulo-m">Apoio em cada passo</h1>
+                        <p class="lead">Nossa equipe está aqui para resolver tudo para você, tornando sua experiência sem complicações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="melhor-curso">
+            <div class="container flex-column">
+
+                <div class="barra-lateral">
+                    <span class="barra"></span>
+                    <h1 class="titulo-g">Qual é o melhor curso de condução para mim?</h1>
+                </div>
+
+                <p class="lead">Descubra as opções disponíveis para você ao reservar aulas de direção com a Driver Labs. Seja você um iniciante iniciando suas aulas de direção pela primeira vez, intermediário ou esteja quase pronto para o teste, temos um curso para você.</p>
+
+                <div class="grid">
+                    <div class="cartao b-radius-10" style="background-image: url('./assets/img/curso-iniciante.jpg');">
+                        <div class="flex-column">
+                            <div class="overlay">
+
+                                <h1 class="titulo-m">Curso para Iniciante</h1>
+                                <p class="lead">Pouca experiência de direção, mas ainda quer tirar sua carteira rápido? Nossos cursos para iniciantes podem ser perfeitos para você.</p>
+                                <a href="http://localhost/driver_labs/assets/pages/single-course.php"><button class="btn">Fazer curso <i class="fa-solid fa-angle-right"></i></button></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao b-radius-10" style="background-image: url('./assets/img/curso-intermediario.PNG');">
+                        <div class="flex-column">
+                            <div class="overlay">
+
+                                <h1 class="titulo-m">Curso Intermediario</h1>
+                                <p class="lead">Você quase dominou muitas das habilidades fundamentais, mas ainda tem um longo caminho a percorrer antes de estar pronto para o teste.</p>
+                                <a href="http://localhost/driver_labs/assets/pages/single-course.php"><button class="btn">Fazer curso <i class="fa-solid fa-angle-right"></i></button></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao b-radius-10" style="background-image: url('./assets/img/curso-atualizacao.PNG');">
+                        <div class="flex-column">
+                            <div class="overlay">
+
+                                <h1 class="titulo-m">Curso de atualização</h1>
+                                <p class="lead">Se você está quase pronto para o teste, mas precisa resolver alguns problemas, um dos nossos cursos de atualização pode ser ideal para você.</p>
+                                <a href="http://localhost/driver_labs/assets/pages/single-course.php"><button class="btn">Fazer curso <i class="fa-solid fa-angle-right"></i></button></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="perguntas">
+            <div class="container flex-column">
+                <div class="barra-lateral">
+                    <span class="barra"></span>
+                    <h1 class="titulo-g">Perguntas Frequêntes</h1>
+                </div>
+
+                <ul class="perguntas-frequentes">
+
+                    <li>
+                        <input type="radio" name="acordeon" id="primeiro">
+                        <label for="primeiro"><span>01</span> Porque fazer aulas de direção com a Malipo?</label>
+                        <div class="resposta">
+                            <p class="lead">Oferecemos uma ampla gama de aulas intensivas de direção projetadas para prepará-lo para qualquer desafio de direção que você possa enfrentar. Nossos instrutores registrados no INNATER são especialistas em navegar pelas várias ruas do Município de Maputo e fornecerão aulas personalizadas adaptadas às suas necessidades individuais. Com nossa programação flexível, você pode aprender perto de casa e se sentir confiante em suas habilidades. Nossas aulas de direção são rápidas e flexíveis, permitindo que você alcance seus objetivos de direção rapidamente. Também oferecemos áreas que cobrimos.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="acordeon" id="segundo">
+                        <label for="segundo"><span>02</span> Como faço para reservar com a Malipo?</label>
+                        <div class="resposta">
+                            <p class="lead">Se você escolher reservar, perguntaremos sobre sua disponibilidade e criaremos um curso que se adapte à sua agenda. Entendemos que todos têm necessidades diferentes, então personalizaremos o curso e encontraremos o teste e o instrutor mais adequados para você. Para facilitar as coisas para você, temos uma ferramenta de recomendação de cursos que fará algumas perguntas simples e sugerirá a melhor opção com base em suas respostas.</p>
+                            <p class="lead">Cada curso de direção vem com um teste de direção acelerado (e um teste teórico, se você precisar!), então reserve hoje mesmo e você passará em pouco tempo.</p>
+
+                            <p class="lead">Cursos disponíveis em toda região de Maputo para suas aulas de direção</p>
+
+                            <p class="lead">Cursos flexíveis com opções de pagamento flexíveis</p>
+
+                            <p class="lead">Orientação especializada de um instrutor de direção registrado no INATTER e verificado pelo CRB.</p>
+
+                            <p class="lead">Para começar, ligue para a equipe em (+258) 87 000 1100, ou reservar online.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="acordeon" id="primeiross">
+                        <label for="primeiross"><span>03</span> A primeira aula é realmente assustadora?</label>
+                        <div class="resposta">
+                            <p class="lead">Não é tão assustador quanto você pode imaginar. Sua primeira aula de direção não incluirá muita direção real. Em vez disso, você terá a oportunidade de conhecer seu instrutor, revisar algumas verificações prévias cruciais e se familiarizar com os controles do carro. Os instrutores de direção estão acostumados a lidar com alunos nervosos, e é perfeitamente natural se sentir assim. À medida que você se torna mais à vontade e confiante com os conceitos que está aprendendo, seus nervos logo começarão a desaparecer.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="acordeon" id="quarto">
+                        <label for="quarto"><span>04</span> Como os cursos estão estruturados?</label>
+                        <div class="resposta">
+                            <p class="lead">Se você precisa de um curso de direção para iniciantes ou de atualização, você escolhe quantas horas dirige por dia. Escolha entre aulas de direção totalmente intensivas (5 horas) ou aulas de direção semi-intensivas (2 horas). Nosso objetivo é adaptar as coisas ao seu redor então, mesmo que você trabalhe ou estude, ainda o colocaremos na estrada rapidamente!</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="acordeon" id="quinto">
+                        <label for="quinto"><span>05</span> Qual curso é o certo para mim?</label>
+                        <div class="resposta">
+                            <p class="lead">Depois de decidir entre um curso de direção manual ou um curso de direção automática, é simplesmente uma questão de usar nosso Recomendador de curso.Alternativamente, você pode nos ligar em (+258) 87 000 1100. Nossa equipe experiente pode fornecer conselhos sobre tudo, desde horas recomendadas, preços de aulas e avaliações de cursos.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="acordeon" id="sexto">
+                        <label for="sexto"><span>06</span> Você ajuda com a revisão de testes teóricos?</label>
+                        <div class="resposta">
+                            <p class="lead">Sim! Pule em uma sessão de revisão online para preparar o teste teórico e ficar pronto para passar. Basta escolher uma data e hora que funcione para você e nós lhe ensinaremos as partes mais complicadas do teste para garantir que você esteja pronto para ir.</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+                <p class="lead">Tem mais alguma pergunta? <a href="http://localhost/driver_labs/assets/pages/perguntas.php">Leia todas as nossas perguntas frequentes.</a></p>
+            </div>
+        </section>
+
+        <section id="testemunhos">
+            <div class="container">
+                <div class="barra-lateral">
+                    <span class="barra"></span>
+                    <h1 class="titulo-g">O que dizem os motoristas</h1>
+                </div>
+
+                <div class="testemunho flex">
+                    <div class="conteudo b-radius-10">
+                        <p class="lead">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illo fugiat ad, sit perferendis quia voluptas. Consequatur nulla architecto sint temporibus laboriosam est expedita amet aspernatur inventore. Sunt, adipisci dignissimos tempore possimus quam voluptatibus, pariatur quod eos vitae illo ipsa officia".</p>
+
+                        <div class="autor flex">
+                            <img src="./assets/img/larissa-doe.png" alt="" class="b-radius-10">
+                            <h1 class="titulo-m">Larissa Doe</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="container flex-column">
+            <div class="flex">
+
+                <div>
+                    <button><i class="fa-brands fa-facebook-f"></i></button>
+                    <a href="#">Suporte</a>
+                </div>
+
+                <div>
+                    <button><i class="fa-solid fa-envelope"></i></button>
+                    <a href="#">Informação</a>
+                </div>
+                <div>
+                    <button><i class="fa-brands fa-instagram"></i></button>
+                    <a href="#">Suporte</a>
+                </div>
+
+            </div>
+
+            <hr>
+            <p style="font-size: .9rem; text-align: center; color: #fff;">2024 &copy; Driver Labs Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <button id="voltar-ao-topo" title="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./assets/js/perguntas-resposta.js"></script>
+    <script src="./assets/js/register.js"></script>
+
+</body>
+
+</html>

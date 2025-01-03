@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <!-- <title>Document</title> -->
+    <style>
+        
+        :root {
+            --branco: #fff;
+            --cinza-claro: #e3f4ff;
+            --cinza-escuro: #f6f6f6;
+            --azul-claro: #1076BC;
+            --azul-escuro: #01568E;
+        }
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        /* Classes Utilitarios */
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: var(--azul-escuro);
+        }
+        
+        .container {
+            margin: 0 4%;
+            background-color: var(--branco);
+            width: 900px;
+            padding: 50px 0;
+            border-radius: 30px;
+            border: none;
+            overflow: hidden;
+            box-shadow: 0 0 50px 5px #00000033;
+            
+            & .form-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 70px;
+                
+                & .box {
+                    width: 49%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                
+                & .box-1 {
+                    & .content {
+                        width: 600px;
+                        height: 600px;
+                        background-color: var(--azul-escuro);
+                        color: #fff;
+                        margin-top: -280px;
+                        margin-left: -130px;
+                        padding: 300px 0 100px 200px;
+                        border-radius: 50%;
+                        
+                        & .titulo-g {
+                            text-transform: uppercase;
+                            font-size: 40px;
+                        }
+                        
+                        & .titulo-m {
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                        
+                        & .lead {
+                            padding-right: 20px;
+                            font-weight: 300;
+                            font-size: 15px;
+                            margin-top: 20px;
+                        }
+                    }
+                    
+                    & .bola-1 {
+                        background-color: var(--azul-claro);
+                        box-shadow: 0 0 205px 10px #2222222c;
+                        margin-top: -100px;
+                        margin-left: -100px;
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 50%;
+                    }
+                    
+                    & .bola-2 {
+                        background-color: var(--azul-claro);
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        margin-top: -300px;
+                        margin-left: 230px;
+                        box-shadow: 0 0 205px 10px #2222222c;
+                        
+                    }
+                }
+                
+                 & .box-2 {
+                    margin-right: 80px;
+                    
+                    & .content {
+                        margin-bottom: 15px;
+                        padding-left: 10px;
+                        & .titulo-g {
+                            font-size: 40px;
+                        }
+                        
+                        & .lead {
+                            font-size: 13px;
+                        }
+                    }
+                    
+                    & .input-group {
+                        background-color: #dfdfdf;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        
+                        & input {
+                            width: 90%;
+                            margin-left: 5px;
+                            height: 30px;
+                            font-size: 15px;
+                            background: none;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                    
+                    & .checkbox {
+                        font-size: 13px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 20px 0;
+                        
+                        & a {
+                            color: var(--azul-escuro);
+                            text-decoration: none;
+                        }
+                        
+                        & p > input:checked {
+                            background-color: var(--azul-claro);
+                        }
+                    }
+                    
+                    & .butoes {
+                        
+                        & button {
+                            width: 100%;
+                            height: 40px;
+                            border-radius: 10px;
+                            border: none;
+                            outline: none;
+                            color: #fff;
+                            font-size: 17px;
+                        }
+                        
+                        & .signin {
+                            background-color: var(--azul-escuro);
+                            transition: .5s;
+                            cursor: pointer;
+                        }
+                        
+                        & .signin:hover {
+                            background-color: var(--azul-claro);
+                            color: #fff;
+                        }
+                        
+                        & .signup {
+                            background: none;
+                            color: var(--azul-escuro);
+                            border: 1px solid var(--azul-escuro);
+                            transition: .5s;
+                            cursor: pointer;
+                        }
+                        
+                        & .signup:hover {
+                            background-color: #00414B;
+                            color: #fff;
+                        }
+                        
+                        & div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin: 5px 0;
+                            
+                            & span {
+                                display: block;
+                                width: 40%;
+                                height: 1px;
+                                background-color: var(--azul-claro);
+                                
+                            }
+                        }
+                        
+                    }
+                    
+                    & .conta {
+                        font-size: 15px;
+                        margin-top: 25px;
+                        
+                        & a {
+                            color: var(--azul-claro);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width: 950px) {
+            
+            .titulo-g {
+                font-size: 25px !important;
+            }
+            
+            .container {
+                width: 500px;
+            }
+            
+            .container .form-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .container .form-container div.box.box-1 {
+                display: none !important;
+            }
+            
+            .container .form-container div.box.box-2 {
+                margin-right: 0;
+                margin: 0 2%;
+                width: 380px;
+                padding: 30px 0;
+            }
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="box box-1">
+                <div class="content">
+                    <h1 class="titulo-g">Bem-Vindo</h1>
+                    <h2 class="titulo-m">Aprender a conduzir nunca foi tão fácil</h2>
+                    <p class="lead">Entre para gerenciar suas aulas, acompanhar seu progresso e aproveitar ao máximo sua experiência de aprendizado!</p>
+                </div>
+                <div class="bola-1"></div>
+                <div class="bola-2"></div>
+            </div>
+            
+            <div class="box box-2">
+                <div class="content">
+                    <h1 class="titulo-g">Entrar</h1>
+                    <p class="lead">Acesse o seu painel para melhor administrar os seus estudos</p>
+                </div>
+                <form>
+                    <div class="input-group mb-10">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                    </div>
+                    
+                    <div class="input-group mb-10">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="Palavra-passe">
+                    </div>
+                    
+                    <div class="checkbox mb-10">
+                        <p><input type="checkbox"> Lembrar-me</p>
+                        <a href="#">Esqueceu a palavra-passe?</a>
+                    </div>
+                    
+                    <div class="butoes mb-10">
+                        <button class="signin">Entrar</button>
+                        <div>
+                            <span></span> ou <span></span>
+                        </div>
+                        <button class="signup">Entrar com outra</button>
+                    </div>
+                    
+                    <p class="conta">Não tem uma conta? <a href="./register.html">Registrar</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

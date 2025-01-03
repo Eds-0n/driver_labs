@@ -1,0 +1,20 @@
+
+/* Estilo do menu-navbar */
+
+#cabecalho .navbar .container ul,
+#cabecalho .navbar .container .btn {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.abrir_fechar {
+    display: block;
+}
+
+#cabecalho .navbar .mobile .btn {
+    width: 200px;
+    text-align: center;
+}

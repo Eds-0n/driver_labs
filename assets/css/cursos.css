@@ -1,0 +1,129 @@
+
+
+/* =================================== */
+
+/*          Pagina de Cursos */
+
+/* =================================== */
+
+#courses-banner {
+    background: url('../img/courses-banner.jpg') no-repeat center center/cover;
+    
+    & .container {
+        padding: 250px 0 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        & * {
+            color: var(--branco);
+            text-align: center;
+        }
+        
+        & .titulo-g {
+            font-size: 2rem;
+            font-family: 'Extatica';
+            font-style: italic;
+            letter-spacing: 2px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        & .lead {
+            font-size: 1.1rem;
+            width: 50%;
+        }
+    }
+}
+
+/* Estilo dos cursos */
+
+#curses {
+    padding: 70px 0;
+    background: var(--cinza-claro);
+    
+    & .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        place-content: center;
+        gap: 30px;
+        margin-bottom: 15px;
+        
+        & .course-card {
+            width: 100%;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            box-shadow: var(--shadow);
+            background: var(--branco);
+            
+            & img {
+                width: 100%;
+                height: 250px;
+            }
+            
+            & .course-content {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 1rem;
+                padding: 1.5rem;
+                
+                & .titulo-m {
+                    font-size: 1.1rem !important;
+                }
+                
+                & span {
+                    display: block;
+                    width: 30%;
+                    padding: .5rem;
+                    background-color: var(--azul-ceu);
+                    color: var(--azul-claro);
+                    text-align: center;
+                    border-radius: 30px;
+                }
+                
+                & .info {
+                    align-self: center;
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    & span {
+                        width: auto;
+                        background: none;
+                        display: inline-block;
+                        color: var(--cinza-escuro);
+                        
+                        & i {
+                            display: inline-block;
+                            color: var(--azul-escuro);
+                            margin-right: .5rem;
+                        }
+                        
+                        & i:hover {
+                            color: var(--azul-claro);
+                        }
+                    }
+                }
+                
+                & .btn {
+                    width: 100%;
+                    background: var(--azul-escuro);
+                    border-radius: 5px;
+                }
+
+                & .btn:hover {
+                    background-color: var(--azul-claro);
+                }
+            }
+        }
+    }
+    
+}
