@@ -119,11 +119,11 @@ li {
 
     padding: .8rem 2rem;
     font-size: .9rem;
-    border: 1px solid var(--azul-claro);
+    border: 1px solid var(--branco);
     background: none;
     outline: none;
     border-radius: 2px;
-    color: var(--branco) !important;
+    color: var(--azul-claro) !important;
     cursor: pointer;
     transition: .5s;
     font-weight: 300;
